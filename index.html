@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sanal Mikroskop</title>
+  <script src="https://openseadragon.github.io/openseadragon/openseadragon.min.js"></script>
+</head>
+<body>
+  <h2>Sanal Mikroskopik Görüntü</h2>
+  <div id="openseadragon1" style="width: 100%; height: 90vh;"></div>
+  <script>
+    var viewer = OpenSeadragon({
+      id: "openseadragon1",
+      prefixUrl: "https://openseadragon.github.io/openseadragon/images/",
+      tileSources: "slide.dzi"
+    });
+  </script>
+</body>
+</html>
